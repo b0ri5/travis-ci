@@ -1,13 +1,14 @@
 language:
-  - cpp
   - python
+  - cpp
   - go
   - java
   - node_js
 compiler: clang
 python: "3.3"
 before_install:
-  - source ~/virtualenv/python3.3/bin/activate
+  - cat ~/virtualenv/python3.3/bin/activate
+#  - source ~/virtualenv/python3.3/bin/activate
   - python --version
 install:
   - pip install pylint
