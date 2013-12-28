@@ -1,6 +1,12 @@
-language: python
+language:
+  - cpp
+  - go
+  - java
+  - node_js
+  - python
+compiler: clang
 python: "3.3"
-install: pip install pylint
+install:
+  - pip install pylint
 script:
-  - which pylint
   - nosetests
