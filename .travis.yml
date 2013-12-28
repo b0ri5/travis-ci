@@ -1,6 +1,6 @@
 language:
-  - python
   - cpp
+  - python
   - go
   - java
   - node_js
