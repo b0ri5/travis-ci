@@ -6,6 +6,9 @@ language:
   - python
 compiler: clang
 python: "3.3"
+before_install:
+  - source ~/virtualenv/python3.3/bin/activate
+  - python --version
 install:
   - pip install pylint
 script:
