@@ -1,13 +1,15 @@
 language:
-  - python
+  #- python
   - cpp
   - go
   - java
   - node_js
 compiler: clang
 python: "3.3"
+virtualenv:
 before_install:
-  - cat ~/virtualenv/python3.3/bin/activate
+  - virtualenv --python=python3.3 python3.3
+#  - cat ~/virtualenv/python3.3/bin/activate
 #  - source ~/virtualenv/python3.3/bin/activate
   - python --version
 install:
