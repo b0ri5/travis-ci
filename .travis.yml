@@ -5,8 +5,8 @@ install:
   - sudo apt-get install python3.3
   - sudo pip install virtualenv
   - virtualenv --version
-  - virtualenv --python=python3.3 virtualenv/python3.3
-  - source virtualenv/python3.3/bin/activate
+  - virtualenv --python=python3.3 ~/virtualenv/python3.3
+  - source ~/virtualenv/python3.3/bin/activate
   - python --version
   - pip install nose
   - pip install pylint
