@@ -1,0 +1,3 @@
+script:
+  - javac -version
+  - gradle --version
