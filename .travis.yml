@@ -1,3 +1,4 @@
 script:
-  - javac -version
-  - gradle --version
+  - npm --version
+  - mocha --version
+  
