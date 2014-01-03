@@ -1,4 +1,5 @@
 language: node_js
+env: CxX=/usr/bin/clang++
 before_install:
   - sudo apt-add-repository --yes ppa:ubuntu-toolchain-r/test
   - sudo apt-add-repository 'deb http://llvm.org/apt/precise/ llvm-toolchain-precise main'
@@ -7,9 +8,6 @@ before_install:
   - apt-cache search clang
 install:
   - sudo apt-get install clang-3.5
-  - alias clang='/usr/bin/clang'
 script:
-  - clang --version
-  - which clang
-  - whereis clang
-  - echo ${PATH}
+  - ${CXX} --version
+  - which ${CXX}
