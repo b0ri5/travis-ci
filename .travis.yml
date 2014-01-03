@@ -1,5 +1,7 @@
 language: node_js
-env: CXX=/usr/bin/clang++
+env:
+  - CXX=/usr/bin/clang++
+  - CC=/usr/bin/clang
 before_install:
   - sudo apt-add-repository --yes ppa:ubuntu-toolchain-r/test
   - sudo apt-add-repository 'deb http://llvm.org/apt/precise/ llvm-toolchain-precise main'
