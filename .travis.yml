@@ -1,3 +1,8 @@
-language: haskell
+language: python
 script:
+ - sudo apt-get install haskell-platform
  - cabal --version
+ - ghc --version
+ - cabal install -v hspec
+ - echo ~
+ - ls ~/.cabal/bin
