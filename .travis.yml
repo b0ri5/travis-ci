@@ -3,6 +3,7 @@ script:
  - sudo apt-get install haskell-platform
  - cabal --version
  - ghc --version
+ - cabal update
  - cabal install -v hspec
  - echo ~
  - ls ~/.cabal/bin
